@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Elementos HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #09f; /* Azul */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenido */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin: 1rem 0 ;
+        }
+        h1, h2 {
+            color: #004d40; /* Verde oscuro */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #004d40;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #004d40;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #b2dfdb; /* Verde suave */
+        }
+        tr:nth-child(odd) {
+            background-color: #e0f2f1; /* Verde muy suave */
+        }
+        tr:hover {
+            background-color: #004d40; /* Verde oscuro al pasar el mouse */
+            color: white;
+        }
+        form {
+            background-color: #f9f9f9; /* Fondo gris claro para el formulario */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #004d40; /* Color de texto verde oscuro */
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #004d40;
+            border-radius: 4px;
+        }
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group label {
+            display: inline;
+            margin-right: 15px;
+        }
+        .button {
+            background-color: #004d40;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #00251a; /* Verde más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de Tabla Avanzada -->
+        <div class="section">
+            <h1>Tabla Avanzada</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                        <th>Ocupación</th>
+                        <th>Activo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>29</td>
+                        <td>Madrid</td>
+                        <td>Ingeniero</td>
+                        <td><input type="checkbox" checked></td>
+                    </tr>
+                    <tr>
+                        <td>Ana Gómez</td>
+                        <td>34</td>
+                        <td>Barcelona</td>
+                        <td>Diseñadora</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Martínez</td>
+                        <td>45</td>
+                        <td>Valencia</td>
+                        <td>Desarrollador</td>
+                        <td><input type="checkbox" checked></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección de Formulario -->
+        <div class="section">
+            <h1>Formulario</h1>
+            <form>
+                <label for="texto">Entrada de Texto:</label>
+                <input type="text" id="texto" name="texto" placeholder="Escribe aquí...">
+
+                <label for="seleccion">Selección Múltiple:</label>
+                <select id="seleccion" name="seleccion" multiple>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+
+                <label>Checkboxes:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="check1" value="1"> Opción A</label>
+                    <label><input type="checkbox" name="check2" value="2"> Opción B</label>
+                    <label><input type="checkbox" name="check3" value="3"> Opción C</label>
+                </div>
+
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
